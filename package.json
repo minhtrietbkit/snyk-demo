@@ -8,21 +8,26 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "babel-cli": "^6.26.0",
+    "async": "3.1.0",
+    "babel-cli": "6.26.0",
     "babel-loader": "7",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "css-loader": "^3.2.0",
-    "less-loader": "^5.0.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-register": "6.26.0",
+    "css-loader": "3.2.0",
+    "express": "4.14.0",
+    "koa": "1.6.2",
+    "less-loader": "5.0.0",
+    "moment": "2.20.1",
+    "react": "16.2.0",
+    "react-dom": "16.9.0",
+    "style-loader": "1.0.0",
+    "vue-form-config": "1.0.1",
+    "webpack": "4.39.2",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "3.8.0"
   },
   "babel": {
     "presets": [
@@ -36,6 +41,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
-  }
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }
