@@ -17,7 +17,7 @@
     "babel-preset-stage-0": "6.24.1",
     "babel-register": "6.26.0",
     "css-loader": "3.2.0",
-    "express": "4.14.0",
+    "express": "4.15.5",
     "koa": "1.6.2",
     "less-loader": "5.0.0",
     "moment": "2.20.1",
